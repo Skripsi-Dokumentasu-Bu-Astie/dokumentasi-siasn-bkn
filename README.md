@@ -1,7 +1,3 @@
----
-name: README
-route: /README
----
 
 # Selamat datang di repository project dokumentasi SIASN-BKN
 
