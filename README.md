@@ -1,9 +1,10 @@
-
 # Selamat datang di repository project dokumentasi SIASN-BKN
+
+![test gambar](./src/img/gaeul.jpg)
 
 Yahalloo.. Selamat datang di repository project dokumentasi aplikasi Sistem Informasi Aparatur Sipil Negara - Badan Kepegawaian Negara (SIASN-BKN).
 
-Repository ini berisi kumpulan dokumentas dari aplikasi SIASN-BKN yang juga menjadi topik skripsi kami.
+Repository ini berisi kumpulan dokumentasi dari aplikasi SIASN-BKN yang juga menjadi topik skripsi kami.
 
 Sebelumnya kami ucapkan terima kasih kepada Ibu **Dr. Astie Darmayantie, ST., MMSI., MSc** yang telah memberikan bimbingan dan kesempatan untuk melakukan dokumentasi.
 
@@ -36,7 +37,7 @@ git clone https://github.com/Khalish-Mulyadi/dokumentasi-siasn-bkn.git
 Kemudian tambahkan remote agar kalian bisa melakukan `push` dan `pull` dari repository ini. Caranya begini
 
 ```
-git add remote add origin https://github.com/Khalish-Mulyadi/dokumentasi-siasn-bkn.git
+git remote add origin https://github.com/Khalish-Mulyadi/dokumentasi-siasn-bkn.git
 ```
 
 Setelah itu kalian bisa membuat dokumentasi pada folder `docs` sesuai dengan bagian yang harus kalian dokumentasi.
