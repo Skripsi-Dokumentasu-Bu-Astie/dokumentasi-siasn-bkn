@@ -1,3 +1,9 @@
+---
+name: Readme
+route: /readme
+hidden: true
+---
+
 # Selamat datang di repository project dokumentasi SIASN-BKN
 
 ![test gambar](./src/img/gaeul.jpg)
