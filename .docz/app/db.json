@@ -119,7 +119,7 @@
         "name": "Validasi Usulan Kenaikan Pangkat",
         "menu": "Layanan Kenaikan Pangkat",
         "route": "/layanan-kenaikan-pangkat/validasi-usulan-kenaikan-pangkat",
-        "order": 1,
+        "order": 2,
         "id": "1f1a3ba61a6476323c540a9313e6a2e1",
         "filepath": "docs/validasi-kenaikan-pangkat/validasiUsulanKenaikanPangkat.mdx",
         "fullpath": "A:\\Privacy\\Collage Stuffs\\Documents\\Kuliah S8\\Skripsi\\project dokumentasi\\siasn-bkn-dokumentasi\\docs\\validasi-kenaikan-pangkat\\validasiUsulanKenaikanPangkat.mdx",
