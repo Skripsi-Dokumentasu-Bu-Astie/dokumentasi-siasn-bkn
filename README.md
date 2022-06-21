@@ -37,13 +37,13 @@ git branch -M main
 Kalian bisa **`clone`** repository ini dengan cara seperti ini
 
 ```
-git clone https://github.com/Khalish-Mulyadi/dokumentasi-siasn-bkn.git
+git clone https://github.com/Skripsi-Dokumentasu-Bu-Astie/dokumentasi-siasn-bkn.git
 ```
 
 Kemudian tambahkan remote agar kalian bisa melakukan `push` dan `pull` dari repository ini. Caranya begini
 
 ```
-git remote add origin https://github.com/Khalish-Mulyadi/dokumentasi-siasn-bkn.git
+git remote add origin https://github.com/Skripsi-Dokumentasu-Bu-Astie/dokumentasi-siasn-bkn.git
 ```
 
 Setelah itu kalian bisa membuat dokumentasi pada folder `docs` sesuai dengan bagian yang harus kalian dokumentasi.
