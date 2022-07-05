@@ -1,7 +1,7 @@
 ---
 name: Validasi Usulan Kenaikan Pangkat
-menu: Layanan Kenaikan Pangkat
-route: /layanan-kenaikan-pangkat/validasi-usulan-kenaikan-pangkat
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/validasi-usulan-kenaikan-pangkat
 ---
 
 # Validasi Usulan Kenaikan Pangkat
@@ -36,8 +36,8 @@ Komponen `ValidasiUsulan` juga menggunakan beberapa Hooks dari `React` diantaran
 
 ### Custom Component yang Digunakan
 
-| Nama Komponen | Contoh Pemanggilan Komponen                                                       | Fungsi Komponen                                                                                      |
-| ------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Layout        | `<Layout> <Layout />`                                                             | Layout utama dari setiap halaman pada aplikasi Layanan Kenaikan Pangkat SIASN-BKN                    |
-| Breadcrumb    | `<Breadcrumb />`                                                                  | Digunakan untuk menunjukkan hirarki navigasi pada halaman                                            |
-| TableVU       | `<TableVU dataTable={isSearch ? dataTable : data} isLoading={loading}></TableVU>` | Merupakan komponen tabel yang menampilkan data usulan kenaikan pangkat, dan juga detail data lainnya |
+| Nama Komponen | Contoh Pemanggilan Komponen                                                                                                                                                                  | Fungsi Komponen                                                                                      |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Layout        | `<Layout>`<br/> `<Layout />`                                                                                                                                                                 | Layout utama dari setiap halaman pada aplikasi Layanan Kenaikan Pangkat SIASN-BKN                    |
+| Breadcrumb    | `<Breadcrumb />`                                                                                                                                                                             | Digunakan untuk menunjukkan hirarki navigasi pada halaman                                            |
+| TableVU       | `<TableVU` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `dataTable={isSearch` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `? dataTable : data}` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `isLoading={loading}>`<br/> `</TableVU>` | Merupakan komponen tabel yang menampilkan data usulan kenaikan pangkat, dan juga detail data lainnya |

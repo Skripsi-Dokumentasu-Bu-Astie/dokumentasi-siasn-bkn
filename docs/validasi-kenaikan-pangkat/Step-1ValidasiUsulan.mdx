@@ -1,0 +1,95 @@
+---
+name: Step - 1 Validasi Usulan Kenaikan Pangkat
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/step-1
+---
+
+# Step-1 Validasi Usulan Kenaikan Pangkat
+
+Setelah melakukan pencarian dan memilih usulan yang akan divalidasi, langkah selanjutnya adalah
+memeriksa keabsahan dokumen usulan.
+
+### Tampilan dan penjelasan Umum
+
+Halaman ini menjelaskan tentang proses pemeriksaan keabsahan dokumen
+usulan, informasi ASN yang bersangkutan, jabatan/posisi serta
+lembaga tempat ASN yang bersangkutan bekerja.
+
+### Card Informasi ASN
+
+Card Informasi ASN berisi informasi singkat ASN yang mengajukan
+usulan kenaikan pangkat. Informasi yang ditampilkan seperti
+Nama ASN, NIP, Instansi Kerja, Jenis Prosedur, Tanggal Usul,
+Alasan Tolak.
+
+Struktur dari komponen Card Informasi ASN adalah:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                              | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| CardProfile   | `<CardProfile` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
+
+Berikut adalah tampilan dari informasi ASN yang mengajukan usulan
+kenaikan pangkat.
+
+![Card Info ASN](../../src/img/Step-1_CardProfile.png)
+
+### Dokumen Pendukung
+
+Dokumen Pendukung adalah komponen atau bagian dari
+langkah pertama dalam proses validasi usulan kenaikan pangkat.
+Bagian Dokumen Pendukung berisi informasi mengenai
+dokumen-dokumen milik ASN yang digunakan sebagai
+pendukung keputusan dan validasi usulan kenaikan pangkat
+yang diajukan.
+
+Struktur dari komponen Dokumen Pendukung adalah:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                                          | Properti/Atribut   | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CardProfile   | `<DokPendukung` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataIsHere=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataIsHere}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dokumenTerupload=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{finalArray}` <br/> `/>` | `dataIsHere`       | `Boolean`               | dataIsHere bertipe <br/> boolean yang berguna <br/> untuk memeriksa apakah ASN <br/> yang mengajukan usulan <br/> memiliki dokumen pendukung.                                                            |
+|               |                                                                                                                                                                                                                                            | `dokumenTerupload` | `Array of object`       | dokumenTerupload <br/> bertipe array of object <br/> yang berisi data <br/> dokumen-dokumen <br/>pendukung yang <br/> dilampirkan oleh ASN <br/> yang melakukan pengajuan <br/> usulan kenaikan pangkat. |
+
+Berikut adalah tampilan dari informasi dokumen pendukung.
+
+![Dokumen Pendukung ASN](../../src/img/Step-1_DokumenPendukung.png)
+
+Disamping dokumen pendukung, terdapat data resume ASN.
+Disini terdapat Resume Data 1, Resume Data 2, serta Preview
+Dokumen Persetujuan Teknis (Pertek).
+
+Resume Data 1 berisi informasi tentang golongan ASN,
+pendidikan terakhir ASN,
+jabatan, masa kerja, serta lembaga tempat ASN
+bekerja.
+
+Berikut adalah tampilan dari Resume Data 1
+
+![Resume Data 1](../../src/img/Step-1_ResumeData1.png)
+
+Resume Data 2 berisi informasi tentang
+Kantor Pelayanan Perbendaharaan Negara (KPPN),
+atasan pada lembaga tempat ASN yang bersangkutan bekerja, serta
+alasan kenaikan pangkat.
+
+Berikut adalah tampilan dari Resume Data 2
+
+![Resume Data 2](../../src/img/Step-1_ResumeData2.png)
+
+Bagian Preview Dokumen Persetujuan Teknis berisi dokumen
+Pertek yang dibuat otomatis oleh Reporting Engine yang
+nantinya dapat diunduh oleh ASN yang bersangkutan untuk diajukan.
+
+Berikut adalah tampilan dari Preview Dokumen Persetujuan Teknis
+
+![Preview Dokumen Pertek](../../src/img/Step-1_PreviewDokumenPertek.png)
+
+Lalu pada bagian bawah terdapat tiga tombol.
+
+- Tombol `Sebelumnya` akan mengarah kembali ke halaman
+  Validasi Usulan.
+
+- Tombol `Tolak Usulan` akan mengarah ke halaman penolakan
+  usulan.
+
+- Tombol `Setujui` akan mengarah ke langkah ke-2 dari proses
+  pengajuan usulan kenaikan pangkat.
