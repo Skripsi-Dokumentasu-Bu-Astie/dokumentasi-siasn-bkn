@@ -53,6 +53,8 @@ Berikut adalah tampilan dari informasi dokumen pendukung.
 
 ![Dokumen Pendukung ASN](../../src/img/Step-1_DokumenPendukung.png)
 
+### Tab Resume Data 1
+
 Disamping dokumen pendukung, terdapat data resume ASN.
 Disini terdapat Resume Data 1, Resume Data 2, serta Preview
 Dokumen Persetujuan Teknis (Pertek).
@@ -62,6 +64,13 @@ pendidikan terakhir ASN,
 jabatan, masa kerja, serta lembaga tempat ASN
 bekerja.
 
+Struktur dari Komponen Tab Resume Data 1 adalah:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                           | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| ResumeData1   | `<ResumeData1` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
+|               |                                                                                                                                                                                                                             | `idUsul`         | `String`                | Properti id usul berisi nilai id dari usulan yang dikirim.                                                    |
+
 Berikut adalah tampilan dari Resume Data 1
 
 ![Resume Data 1](../../src/img/Step-1_ResumeData1.png)
@@ -70,6 +79,10 @@ Resume Data 2 berisi informasi tentang
 Kantor Pelayanan Perbendaharaan Negara (KPPN),
 atasan pada lembaga tempat ASN yang bersangkutan bekerja, serta
 alasan kenaikan pangkat.
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                              | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| ResumeData2   | `<ResumeData2` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
 
 Berikut adalah tampilan dari Resume Data 2
 
