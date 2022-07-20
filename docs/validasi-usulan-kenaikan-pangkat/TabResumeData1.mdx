@@ -1,0 +1,23 @@
+---
+name: Resume Data 1
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/resume-data-1
+---
+
+# Resume Data 1
+
+Resume Data 1 berisi informasi tentang golongan ASN,
+pendidikan terakhir ASN,
+jabatan, masa kerja, serta lembaga tempat ASN
+bekerja.
+
+![Resume Data 1](../../src/img/Step-1_ResumeData1.png)
+
+### Struktur Komponen
+
+`ResumeData1` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                           | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| ResumeData1   | `<ResumeData1` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
+|               |                                                                                                                                                                                                                             | `idUsul`         | `String`                | Properti id usul berisi nilai id dari usulan yang dikirim.                                                    |

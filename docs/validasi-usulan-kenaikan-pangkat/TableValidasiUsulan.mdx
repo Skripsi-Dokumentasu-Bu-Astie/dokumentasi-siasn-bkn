@@ -1,0 +1,22 @@
+---
+name: Tabel Validasi Usulan
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/tabel-validasi-usulan
+---
+
+# Tabel Validasi Usulan
+
+Tabel Validasi Usulan adalah komponen yang berada
+pada halaman Validasi Usulan yang berguna untuk menampilkan
+data usulan.
+
+![Tabel Validasi Usulan](../../src/img/TabelUsulan.png)
+
+### Struktur Komponen
+
+`TableVU` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                            | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                                                                                   |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| TableVU       | `<TableVU` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `dataTable={isSearch` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `? dataTable : data}` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `isLoading={loading}>`<br/> `</TableVU>` | `dataTable`      | `Object`                | Properti dataTable memiliki <br/> opsi berdasarkan <br/> state isSearch, dimana jika <br/> state isSearch bernilai true, <br/> maka data yang ditampilkan adalah <br/> data yang sesuai dengan <br/> yang user cari dengan input <br/> dari form cari usulan |
+|               |                                                                                                                                                                                              | `isLoading`      | `Boolean`               | Properti isLoading adalah <br/> boolean yang berfungsi untuk menentukan <br/> proses loading dari pengambilan data <br/> usulan yang nantinya akan <br/> ditampilkan pada tabel validasi usulan.                                                             |
