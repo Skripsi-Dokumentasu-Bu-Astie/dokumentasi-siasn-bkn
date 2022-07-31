@@ -1,0 +1,21 @@
+---
+name: Preview Dokumen Persetujuan Teknis
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/preview-dok-pertek
+---
+
+# Preview Dokumen Persetujuan Teknis
+
+Preview Dokumen Persetujuan Teknis berisi dokumen
+Pertek yang dibuat otomatis oleh Reporting Engine yang
+nantinya dapat diunduh oleh ASN yang bersangkutan untuk diajukan.
+
+![Preview Dokumen Pertek](../../src/img/validasi-usulan-kenaikan-pangkat/Step-1_PreviewDokumenPertek.png)
+
+### Struktur Komponen
+
+`PreviewDokPertek` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen    | Contoh Pemanggilan <br/> Komponen                                                                                           | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                              |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PreviewDokPertek | `<PreviewDokPertek` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> `/>` | `idUsul`         | `String`                | Properti id usul berisi informasi <br/> id usulan yang diajukan yang akan digunakan <br/> sebagai acuan untuk mengambil <br/> data Dokumen Persetujuan Teknis <br/> berdasarkan id usulan yang diajukan |
