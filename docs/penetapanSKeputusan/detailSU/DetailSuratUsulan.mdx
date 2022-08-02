@@ -1,36 +1,39 @@
 ---
 name: Detail Surat Usulan
-menu: Penetapan Surat Keputusan
+menu: detailSU
 route: /penetapan-sk-keputusan/detailSU/Detail-Surat-Usulan
 order: 1
 ---
 
 # Detail Surat Usulan
 
-## Struktur dan Komponen yang Digunakan
+### Struktur dan Komponen yang Digunakan
 
-Halaman ini menggunakan **`React-Bootstrap`** sebagai framework tampilan. Dan ada beberapa cutstom-component yang digunakan seperti `Breadcrumb` yang digunakan untuk menunjukkan hirarki navigasi, 
+Halaman ini menggunakan **`React-Bootstrap`** sebagai framework tampilan. Dan ada beberapa custom-component yang digunakan seperti `Breadcrumb` yang digunakan untuk menunjukkan hirarki navigasi,
 `Form` yang digunakan untuk membuat komponen form, serta `Layout` yang merupakan tata letak dasar halaman.
 
 Komponen `ValidasiUsulan` juga menggunakan beberapa Hooks dari `React` diantaranya, `useState` dan `useEffect`.
 
 ### Library atau Modul yang Digunakan
 
-| Library / Modul                | Komponen yang digunakan | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                 |
-| ------------------------------ | ----------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `components/Layout`            | `Layout`                | `-`              |                         | `<Link>` Merupakan library bawaan dari next js <br/> digunakan untuk menuju halaman yang akan dimasukkan di atribut href.                  |
-| `/Breadcrumb`                  | `Breacrumb`             |                  |                         | `<Breacrumb>` Merupakan komponen untuk menampilkan Breadcrumb sebagai navigasi                                                             |
-| `/wizardStepOneSU/ShowButton`  | `Card`                  |                  |                         | `<Card>` Merupakan komponen dari library `react-bootstrap` untuk membuat komponen card                                                     |
-| `react-bootstrap`              | `Card.Body`             |                  |                         | `<Card.Body>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat pad content di dalam `<Card>`.                         |
-| `/wizardStepOneSU/CardProfile` | `Tabs`                  |                  |                         | `<Tabs>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat kumpulan Tab                                                |
-|                                | `Tab`                   |                  |                         | `<Tab>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat komponen Tab                                                 |
-|                                | `Form`                  |                  |                         | `<Form>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat komponen form.                               |
-|                                | `Form.Row`              |                  |                         | `<Form.Row>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat baris dalam komponen form.               |
-|                                | `Form.Group`            |                  |                         | `<Form.Group>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat grup dalam komponen form.              |
-|                                | `Form.Control`          |                  |                         | `<Form.Control>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk me-render komponen dengan styling bootstrap. |
-|                                | `Form.Label`            |                  |                         | `<Form.Label>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat label pada komponen form.              |
-|                                | `Form.Body`             |                  |                         | `<Form.Body>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk me-render body pada form.                       |
-|                                | `Form.File`             |                  |                         | `<Form.File>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk menaruh file untuk di-input oleh user.          |
-|                                | `Form.Check`            |                  |                         | `<Form.Check>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat check box.                             |
-|                                | `Col`                   |                  |                         | `<Col>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membaut kolom di dalam form.                          |
-|                                | `Table`                 |                  |                         | `<Table>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat komponen tabel.                                              |
+| Library / Modul                | Komponen yang digunakan | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                    |
+| ------------------------------ | ----------------------- | ---------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `components/Layout`            | `Layout`                | `props.children` | `Any`                   | `<Link>` Merupakan library bawaan dari next js <br/> digunakan untuk menuju halaman yang akan dimasukkan di atribut href. <br/> `props.children` adalah komponen yang berada di dalam Layout. |
+| `/Breadcrumb`                  | `Breacrumb`             |                  |                         | `<Breacrumb>` Merupakan komponen untuk menampilkan Breadcrumb sebagai navigasi.                                                                                                               |
+| `/wizardStepOneSU/ShowButton`  |                         |                  |                         |                                                                                                                                                                                               |
+| `react-bootstrap`              |                         |                  |                         |                                                                                                                                                                                               |
+| `/wizardStepOneSU/CardProfile` |                         |                  |                         |                                                                                                                                                                                               |
+|                                | `Card`                  |                  |                         | `<Card>` Merupakan komponen dari library `react-bootstrap` untuk membuat komponen card.                                                                                                       |
+|                                | `Card.Body`             |                  |                         | `<Card.Body>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat pad content di dalam `<Card>`.                                                                            |
+|                                | `Tabs`                  |                  |                         | `<Tabs>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat kumpulan Tab.                                                                                                  |
+|                                | `Tab`                   |                  |                         | `<Tab>` Merupakan komponen dari library `react-bootstrap` <br/> untuk membuat komponen Tab.                                                                                                   |
+|                                | `Form`                  |                  |                         | `<Form>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat komponen form.                                                                                  |
+|                                | `Form.Row`              |                  |                         | `<Form.Row>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat baris dalam komponen form.                                                                  |
+|                                | `Form.Group`            |                  |                         | `<Form.Group>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat grup dalam komponen form.                                                                 |
+|                                | `Form.Control`          |                  |                         | `<Form.Control>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk me-render komponen dengan styling bootstrap.                                                    |
+|                                | `Form.Label`            |                  |                         | `<Form.Label>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat label pada komponen form.                                                                 |
+|                                | `Form.Body`             |                  |                         | `<Form.Body>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk me-render body pada form.                                                                          |
+|                                | `Form.File`             |                  |                         | `<Form.File>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk menaruh file untuk di-input oleh user.                                                             |
+|                                | `Form.Check`            |                  |                         | `<Form.Check>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat check box.                                                                                |
+|                                | `Col`                   |                  |                         | `<Col>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membaut kolom di dalam form.                                                                             |
+|                                | `Table`                 |                  |                         | `<Table>` Merupakan komponen dari library `react-bootstrap` <br/> yang berfungsi untuk membuat komponen tabel.                                                                                |
