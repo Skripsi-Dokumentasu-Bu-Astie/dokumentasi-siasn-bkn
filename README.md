@@ -6,7 +6,7 @@ hidden: true
 
 # Selamat datang di repository project dokumentasi SIASN-BKN
 
-![test gambar](./src/img/gaeul.jpg)
+<!-- ![test gambar](./src/img/gaeul.jpg) -->
 
 Yahalloo.. Selamat datang di repository project dokumentasi aplikasi Sistem Informasi Aparatur Sipil Negara - Badan Kepegawaian Negara (SIASN-BKN).
 
