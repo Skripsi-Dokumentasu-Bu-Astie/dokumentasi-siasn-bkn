@@ -1,0 +1,25 @@
+---
+name: Dokumen Pendukung
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/dokumen-pendukung
+---
+
+# Dokumen Pendukung
+
+Dokumen Pendukung adalah komponen atau bagian dari
+langkah pertama dalam proses validasi usulan kenaikan pangkat.
+Bagian Dokumen Pendukung berisi informasi mengenai
+dokumen-dokumen milik ASN yang digunakan sebagai
+pendukung keputusan dan validasi usulan kenaikan pangkat
+yang diajukan.
+
+![Dokumen Pendukung ASN](../../src/img/validasi-usulan-kenaikan-pangkat/Step-1_DokumenPendukung.jpg)
+
+### Struktur Komponen
+
+`DokPendukung` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                                          | Properti/Atribut   | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DokPendukung  | `<DokPendukung` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataIsHere=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataIsHere}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dokumenTerupload=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{finalArray}` <br/> `/>` | `dataIsHere`       | `Boolean`               | dataIsHere bertipe <br/> boolean yang berguna <br/> untuk memeriksa apakah ASN <br/> yang mengajukan usulan <br/> memiliki dokumen pendukung.                                                            |
+|               |                                                                                                                                                                                                                                            | `dokumenTerupload` | `Array of object`       | dokumenTerupload <br/> bertipe array of object <br/> yang berisi data <br/> dokumen-dokumen <br/>pendukung yang <br/> dilampirkan oleh ASN <br/> yang melakukan pengajuan <br/> usulan kenaikan pangkat. |

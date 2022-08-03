@@ -1,0 +1,22 @@
+---
+name: Card Informasi ASN
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/card-info-asn
+---
+
+# Card Informasi ASN
+
+Card Informasi ASN berisi informasi singkat ASN yang mengajukan
+usulan kenaikan pangkat. Informasi yang ditampilkan seperti
+Nama ASN, NIP, Instansi Kerja, Jenis Prosedur, Tanggal Usul,
+Alasan Tolak.
+
+![Card Info ASN](../../src/img/validasi-usulan-kenaikan-pangkat/CardProfile.jpg)
+
+### Struktur Komponen
+
+`CardProfile` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                              | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| CardProfile   | `<CardProfile` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
