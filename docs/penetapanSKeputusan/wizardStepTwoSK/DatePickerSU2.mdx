@@ -16,8 +16,15 @@ pada langkah kedua di halaman Ajukan Surat Keputusan.
 
 `DatePicker` memiliki struktur komponen sebagai berikut:
 
-| Library / Modul    | Komponen yang digunakan | Properti/Atribut | Penjelasan                                                                                                        |
-| ------------------ | ----------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `react`            | `useState`              |                  | `react` Merupakan library react, <br/> `useState` digunakan untuk menyimpan dan mengatur state data pada halaman. |
-| `react-datepicker` |                         |                  | `react-datepicker` Digunakan untuk user memilih tanggal.                                                          |
-| `IconCalendarSU2`  |                         |                  | `IconCalendarSU2` Merupakan icon kalender pada tanggal.                                                           |
+| Library / Modul    | Komponen yang digunakan | Properti/Atribut              | Penjelasan                                                                                                                                               |
+| ------------------ | ----------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `react`            | `useState`              |                               | `react` Merupakan library react, <br/> `useState` digunakan untuk menyimpan dan mengatur state data pada halaman.                                        |
+| `react-datepicker` | `DatePicker`            |                               | `react-datepicker` Library untuk memanggil komponen DatePicker. <br/> `DatePicker` Komponen yang digunakan user untuk menginput Tanggal.                 |
+| `IconCalendarSU2`  | `IconCalendarSU2`       |                               | `IconCalendarSU2` Merupakan Library untuk memanggil komponen IconCalenderSU2. <br/> `IconCalendarSU2` Komponen Untuk memunculkan icon kalender pada web. |
+|                    |                         | `className="input-group"`     | `className="input-group` akan memberikan styple pada komponen DatePicker.                                                                                |
+|                    |                         | `placeholderText`             | `placeholderText` Untuk memberikan text place holder pada DatePicker.                                                                                    |
+|                    |                         | `selected`                    | `selected` Komponen ini bisa dipilih.                                                                                                                    |
+|                    |                         | `onChange`                    | `onChange` suatu Atribut jika ada perubahan state maka komponen akan melakukan suatu tindakan.                                                           |
+|                    |                         | `dateFormat`                  | `dateFormat` Suatu atribut untuk memnentukan format tanggalnya seperti dd/MM/YYYY.                                                                       |
+|                    |                         | `showYearDropdown`            | `showYearDropdown` akan memunculkan menu dropdown untuk menampilan tanggal-tanggal.                                                                      |
+|                    |                         | `scrollableMonthYearDropdown` | `scrollableMonthYearDropdown` Suatu atribut yang membuat showYearDropdown dapat di scroll.                                                               |
