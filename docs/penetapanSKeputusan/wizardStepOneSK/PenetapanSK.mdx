@@ -1,0 +1,23 @@
+---
+name: Penetapan SK-WizardStepOneSK
+menu: penetapanSKeputusan
+route: /penetapan-sk-keputusan/wizard-Step-one-SK/penetapan-sk
+---
+
+# Penetapan SK (Surat Keputusan)
+
+Untuk melakukan pencarian data PNS berdasarkan form yang tersedia.
+
+![Penetapan SK](../../../src/img/WizardSK/KomponenPenetapanSK.png)
+
+`Penetapan SK` memiliki struktur Komponen sebagai berikut:
+
+| Library / Modul   | Komponen yang digunakan                | Properti/Atribut | Penjelasan                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------- | -------------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Layout`          | `<Layout>`                             |                  | `<Layout>` Merupakan library buatan dari component yang lain yang berfungsi sebagai pngecekan token, <br/> jika tidak ada token makan user akan dialihkan ke halaman utama.                                                                                                                                                                                           |
+| `react-bootstrap` | `{ Form, Col, Button, Dropdown, Row }` |                  | `react-bootstrap` Merupakan library dari bootstrap khusus untuk react, <br/> `<Form>` Sebagai pembentuk element Form dengan styling bawaan bootstrap, <br/> `<Col>` Merupakan komponen untuk membuat kolom, <br/> `<Button>` Merupakan komponen untuk membuat Button dengan styling, <br/> `<Dropdown>` Untuk membuat menu drop down,<br/> `<Row>` Untuk membuat Row. |
+| `react`           | `React, { useState, useEffect }`       |                  | `react` Merupakan library react, <br/> `useState` digunakan untuk menyimpan dan mengatur state data pada halaman, <br/> `useEffect` digunakan untuk merender state.                                                                                                                                                                                                   |
+| `Breadcrumb`      | `Breadcrumb`                           |                  | `Breacrumb` Merupakan komponen untuk menampilkan Breadcrumb sebagai navigasi.                                                                                                                                                                                                                                                                                         |
+| `TableSK`         | `TableSK`                              |                  | `TableSK` Untuk memanggil komponen TableSK.                                                                                                                                                                                                                                                                                                                           |
+| `react-redux`     | `useDispatch, & useSelector`           |                  | `react-redux` Merupakan library dari redux yang berfungsi sebagai mengatur state secara global, <br/> `useDispatch` digunakan untuk membuat state menjadi global, dan `useSelector` digunakan untuk mengambil state global.                                                                                                                                           |
+| `next/link`       | `<Link>`                               | `href`           | `<Link>` Merupakan library bawaan dari next js <br/> digunakan untuk menuju halaman yang akan dimasukkan di atribut href, <br/>`href` Merupakan atribut yang ada di dalam `<Link>` <br/> yang berfungsi untuk menaruh alamat halaman yang ingin dituju.                                                                                                               |
