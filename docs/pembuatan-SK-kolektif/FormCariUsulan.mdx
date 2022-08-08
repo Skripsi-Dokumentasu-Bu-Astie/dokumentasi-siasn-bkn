@@ -1,0 +1,39 @@
+---
+name: Form Cari Usulan
+menu: Pembuatan SK Kolektif
+route: /docs-pembuatan-sk-kolektif-form-cari-usulan
+---
+
+# Form Cari Usulan
+
+Form cari usulan merupakan form yang terdapat pada halaman [Tahap 1](/docs-pembuatan-sk-kolektif-step-one "title") menu Pembuatan SK Kolektif. 
+Form ini digunakan ketika para ASN akan melihat dan mencari usulan yang telah diajukan berdasarkan kategori yang tersedia. Kategori tersebut diantarnya yaitu: 
+* NIP PNS 
+* Nama PNS
+* Tanggal Usulan
+* Jenis Prosedur
+* Jenis Kenaikan Pangkat
+* Instansi Kerja
+* Jenis Kenaikan Jabatan
+* Status Usulan
+
+Form cari usulan ini bukan merupakan sebuah *custom component*. Namun, form ini dibuat dengan memanfaatkan beberapa komponen yang ada pada library `react-bootstrap`.
+
+<br/>
+
+```Berikut merupakan tampilan dari Form Cari Usulan```
+![Form Cari Usulan](../../src/img/pembuatan-SK-Kolektif/FormCariUsulan.jpeg)
+
+### Struktur Komponen
+
+Berikut adalah beberapa komponen dari library `react-bootstrap` yang digunakan dalam membuat Form Cari Usulan.
+
+| Library / Modul   | Komponen yang digunakan | Penjelasan                                                                                                                                   |
+| ----------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `react-bootstrap` | `Form`                  | `Form` digunakan untuk membuat form yang dapat digunakan <br/> untuk menampung input dari user.                                                    |
+|                   | `Form.Label`            | `Form.Label` digunakan untuk membuat label pada suatu field input.                                                                           |
+|                   | `Form.Control`          | `Form.Control` digunakan untuk membuat sebuah field input. <br/> `Form.Control` memiliki beberapa `type`, diantaranya `text`, `date`, <br/> dan `email`. |
+|                   | `Form.Group`            | `Form.Group` digunakan untuk mengelompokkan beberapa komponen pada form.                                                                     |
+|                   | `Form.Row`              | `Form.Row` digunakan untuk membuat tampilan menjadi baris. Pada umumnya <br/> `Form.Row` digunakan bersamaan dengan `Col`.                         |
+|                   | `Col`                   | `Col` digunakan untuk mengatur konten di dalam `Row`.                                                                                        |
+|                   | `Button`                | `Button` adalah komponen tombol pada `react-bootstrap`                                                                                       |

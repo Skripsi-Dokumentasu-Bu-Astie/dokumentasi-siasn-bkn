@@ -1,0 +1,32 @@
+---
+name: Table Surat Usulan
+menu: Pembuatan SK Kolektif
+route: /docs-pembuatan-sk-kolektif-table-step-1
+---
+
+# Table Surat Usulan
+
+Table Surat Usulan merupakan tabel yang terdapat pada halaman [Tahap 1](/docs-pembuatan-sk-kolektif-step-one "title") dan digunakan untuk menampilkan data ASN yang telah mengajukan surat usulan. Pada table ini ASN dapat memilih data yang akan dilakukan pembuatan SK kolektif.
+Table ini terdiri dari beberapa kolom, yaitu:
+* NIP
+* Nama 
+* Jenis Kenaikan
+* Jenis Prosedur
+* Instansi
+* Periode 
+* Status Usulan
+* Aksi yang terdiri dari lihat resume data pribadi ASN, data atasan pada lembaga tempat ASN yang bersangkutan bekerja, dan preview dari dokumen persetujuan teknis. 
+
+<br/>
+
+```Berikut merupakan tampilan dari Table Surat Usulan```
+![Table Surat Usulan](../../src/img/pembuatan-SK-Kolektif/TableStep1.jpeg)
+
+### Component Structure
+
+`Table Surat Usulan` memiliki struktur komponen sebagai berikut.
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                            | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                     |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------|
+| TableStep1    | `<TableStep1` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `dataTable={dataTable}` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `step={1}>` <br/> `</TableStep1>` | `dataTable`      | `Object`                          | `dataTable` merupakan atribut <br/> yang menampung semua data ASN <br/> yang akan ditampilkan <br/> di tabel. Nilai dari <br/> properti `dataTable` didapatkan <br/> dari API getDataSKKol.                                     |
+|               |                                                                                                                                       | `step`           | `Number`                          | `step` merupakan atribut yang <br/> menyimpan data halaman <br/> tahapan yang akan <br/> ditampilkan. Pada hal ini <br/> `step` bernilai 1, di mana <br/> berarti Table Surat <br/>  Usulan ini ditampilkan <br/> pada halaman step 1. |

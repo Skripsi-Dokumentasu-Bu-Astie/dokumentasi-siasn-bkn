@@ -1,0 +1,26 @@
+---
+name: CustomSteps
+menu: Pembuatan SK Kolektif
+route: /docs-pembuatan-sk-kolektif-customsteps
+---
+
+# CustomSteps
+
+CustomSteps merupakan *custom component* yang digunakan sebagai kerangka dari konten yang akan ditampilkan pada menu Pembuatan SK Kolektif. `CustomSteps` merupakan salah satu *reusable component* yang dapat digunakan berulang-ulang sesuai dengan properti yang diberikan.
+CustomSteps terdiri atas beberapa bagian di dalamnya, yaitu sebagai berikut. 
+1. Steps 
+2. Card
+3. Button
+
+```Berikut merupakan tampilan dari CustomSteps```
+![CustomSteps](../../src/img/pembuatan-SK-Kolektif/CustomSteps.jpeg)
+
+### Component Structure
+
+
+`CustomSteps` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                             | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                         |
+| ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| ---------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------|
+| CustomSteps   | `<CustomSteps` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `field= {fields()}` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `current= {current}` <br/>  `/>`                             | `field`          | `Function`              | `field` berisi kumpulan properti <br/> untuk menampilkan struktur konten <br/> pada setiap step halaman <br/> yang ada pada menu <br/> Pembuatan SK Kolektif|
+|               |                                                                                                                                                                               | `current`        | `Integer`               | `current` berfungsi untuk <br/> menampung nilai dari setiap <br/> step halaman yang ada pada <br/> menu Pembuatan SK Kolektif                      |
