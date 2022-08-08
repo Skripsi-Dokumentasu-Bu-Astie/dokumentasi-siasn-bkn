@@ -1,0 +1,24 @@
+---
+name: Preview Doc Pertek SK
+menu: Pembuatan SK Kolektif
+route: /docs-pembuatan-sk-kolektif-tab-preview-doc-pertek-sk
+---
+
+# Preview Doc Pertek SK
+
+Preview Doc Pertek SK merupakan salah satu modal yang berada pada kolom aksi pada [Tabel Surat Usulan](/docs-pembuatan-sk-kolektif-table-step-1 "title"). 
+Preview Doc Pertek SK ini berisi detail dari dokumen pertimbangan teknis yang bisa di download dengan ekstensi pdf. 
+
+<br/>
+
+```Berikut merupakan tampilan dari Preview Doc Pertek SK```
+
+### Component Structure
+
+```Berikut merupakan tampilan dari halaman Preview Document```
+![Preview Document](../../src/img/pembuatan-SK-Kolektif/PreviewDocument.jpeg)
+
+| Nama Komponen        | Contoh Pemanggilan <br/> Komponen                                                                                                                                                      | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                        |
+| -------------        | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------| ------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `PreviewDocPertekSK` | `<PreviewDocPertekSK` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `idUsul=`  <br/> &nbsp;&nbsp;&nbsp;&nbsp; `{props?.idUsul}` <br/> &nbsp;&nbsp;&nbsp;&nbsp; `path='kp/dokumen/pertek'` <br/> `/>`  | `idUsul`         | `String`                | `idUsul` merupakan atribut <br/> yang berisi informasi <br/> id usulan yang diajukan dan <br/> akan digunakan sebagai acuan <br/> untuk mengambil data Dokumen <br/> Pertimbangan Teknis berdasarkan id <br/> usulan yang diajukan |
+|                      |                                                                                                                                                                                        | `path`           | `String`                | `path` merupakan atribut yang <br/> berisi path dari file <br/> dokumen pertimbangan teknis <br/> atau surat keputusan yang <br/> akan ditampilkan. |
