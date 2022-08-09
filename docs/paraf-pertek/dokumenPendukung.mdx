@@ -1,0 +1,28 @@
+---
+name: Dokumen Pendukung
+menu: Paraf Pertek
+route: /paraf-pertek/dokumen-pendukung
+---
+
+
+
+# Dokumen Pendukung
+
+Dokumen Pendukung adalah komponen atau bagian dari
+langkah pertama dalam proses pengajuan paraf pertek untuk kenaikan pangkat.
+Bagian Dokumen Pendukung berisi informasi mengenai
+dokumen-dokumen milik ASN yang digunakan sebagai
+pendukung keputusan dan memvalidasi terkait pengajuan paraf pertek untuk kenaikan pangkat.
+
+
+### Berikut adalah tampilan dari informasi dokumen pendukung.
+
+![Dokumen Pendukung ASN](../../src/img/paraf-pertek/StepOnePP_DokumenPendukung.png)
+
+### Struktur dari komponen Dokumen Pendukung adalah:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                                          | Properti/Atribut   | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DokPendukung  | `<DokPendukung` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataIsHere=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataIsHere}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dokumenTerupload=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{finalArray}` <br/> `/>` | `dataIsHere`       | `Boolean`               | dataIsHere bertipe <br/> boolean yang berguna <br/> untuk memeriksa apakah ASN <br/> yang mengajukan usulan <br/> memiliki dokumen pendukung.                                                            |
+|               |                                                                                                                                                                                                                                            | `dokumenTerupload` | `Array of object`       | dokumenTerupload <br/> bertipe array of object <br/> yang berisi data <br/> dokumen-dokumen <br/>pendukung yang <br/> dilampirkan oleh ASN <br/> yang melakukan pengajuan <br/> usulan kenaikan pangkat. |
+

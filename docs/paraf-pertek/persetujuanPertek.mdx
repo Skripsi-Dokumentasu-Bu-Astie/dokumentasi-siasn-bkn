@@ -1,0 +1,24 @@
+---
+name: Persetujuan Pertek
+menu: Paraf Pertek
+route: /paraf-pertek/persetujuan-pertek
+---
+
+# Persetujuan Pertek
+
+Persetujuan Pertek merupakan form untuk persetujuan pengajuan paraf pertek yang divalidasi menggunakan password.
+Pada step ini bagian yang bersangkutan memasukkan password yang valid untuk memvalidasi persetujuan paraf pertek.
+
+
+
+![DigitalSignature ](../../src/img/paraf-pertek/PP_disetujuiStep2.png)
+
+
+
+### Struktur dari Komponen yang digunakan:
+
+
+| Nama Komponen      | Contoh Pemanggilan <br/> Komponen                                                                                              | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                      |
+| -------------      | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------               |
+| DigitalSignature   | `<DigitalSignature` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> `/>`    | `idUsul`         | `Object`                | Properti idUsul berisi id nilai usulan yang dikirim. <br/> Nilai id tersebut digunakan sebagai kondisi apakah password <br/> yang dimasukkan bernilai benar atau salah.         |
+
