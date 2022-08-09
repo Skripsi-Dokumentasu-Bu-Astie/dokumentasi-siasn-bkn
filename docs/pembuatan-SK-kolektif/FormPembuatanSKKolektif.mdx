@@ -1,0 +1,37 @@
+---
+name: Form Pembuatan SK Kolektif
+menu: Pembuatan SK Kolektif
+route: /docs-pembuatan-sk-kolektif-form-pembuatan-sk-kolektif
+---
+
+# Form Pembuatan SK Kolektif
+
+Form pembutan SK kolektif merupakan form yang terdapat pada halaman [Tahap 2](/docs-pembuatan-sk-kolektif-step-two "title") menu pembuatan SK kolektif. 
+ASN yang akan mengajukan pembuatan SK kolektif harus mengisi field-field yang tersedia pada form pembuatan SK kolektif. Field tersebut diantaranya, yaitu:
+* Nomor SK Kolektif
+* Tanggal Surat
+* Lokasi Penetapan
+* Pilih Pejabat Untuk Paraf
+* Pilih Pejabat Untuk Tanda Tangan
+* Jabatan Pemaraf
+* Jabatan Penandatangan
+
+Untuk field jabatan pemaraf dan penandatangan akan terisi otomatis ketika ASN telah mengisi field Pejabat untuk paraf dan tanda tangan. 
+Form pembuatan SK kolektif ini bukan merupakan sebuah *custom component*. Namun, form ini dibuat dengan memanfaatkan beberapa komponen yang ada pada library `react-bootstrap`.
+
+<br/>
+
+```Berikut merupakan tampilan dari Form Pembuatan SK Kolektif```
+![Form Pembuatan SK Kolektif](../../src/img/pembuatan-SK-Kolektif/FormPembuatanSKKolektif.jpeg)
+
+### Struktur Komponen
+
+Berikut adalah beberapa komponen dari library `react-bootstrap` yang digunakan dalam membuat Form Pembuatan SK Kolektif.
+
+| Library / Modul   | Komponen yang digunakan | Penjelasan                                                                                                                                   |
+| ----------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `react-bootstrap` | `Form`                  | `Form` digunakan untuk membuat form yang dapat digunakan <br/> untuk menampung input dari user.                                              |
+|                   | `Form.Label`            | `Form.Label` digunakan untuk membuat label pada suatu field input.                                                                           |
+|                   | `Form.Row`              | `Form.Row` digunakan untuk membuat tampilan menjadi baris. Pada umumnya <br/> `Form.Row` digunakan bersamaan dengan `Col`.                   |
+|                   | `Col`                   | `Col` digunakan untuk mengatur konten di dalam `Row`.                                                                                        |
+|                   | `Button`                | `Button` adalah komponen tombol pada `react-bootstrap`                                                                                       |
