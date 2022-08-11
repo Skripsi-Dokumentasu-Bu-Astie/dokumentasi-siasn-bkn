@@ -1,15 +1,15 @@
 ---
-name: Fields
+name: Field
 menu: Pembuatan SK Kolektif
 route: /docs-pembuatan-sk-kolektif-fields
 ---
 
-# Fields
+# Field
 
-Fields merupakan *custom component* berupa fungsi yang digunakan sebagai properti pada `component CustomSteps` dan berfungsi untuk menampilkan judul, konten, dan deskripsi pada setiap step halaman yang ada pada menu Pembuatan SK Kolektif.
+Field merupakan *custom component* berupa function yang digunakan sebagai properti pada `component CustomSteps` dan berfungsi untuk menampilkan judul, konten, dan deskripsi pada setiap step halaman yang ada pada menu Pembuatan SK Kolektif.
 
 
-#### Fields merupakan sebuah component yang berupa *array of object*. Fields terdiri atas 3 *key* dan *value*.
+#### Field terdiri atas 3 *key* dan *value*.
 1. `title` => berisi judul dari setiap step halaman yang ada pada menu Pembuatan SK Kolektif
 2. `content`=> berisi konten yang akan ditampilkan dari setiap step halaman yang ada pada menu Pembuatan SK Kolektif
 3. `description` => berisi deskripsi judul dari setiap step halaman yang ada pada menu Pembuatan SK Kolektif
@@ -17,8 +17,8 @@ Fields merupakan *custom component* berupa fungsi yang digunakan sebagai propert
 
 ### Component Structure
 
-`Fields` memiliki struktur komponen sebagai berikut. 
+`Field` memiliki struktur komponen sebagai berikut. 
 
 | Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                             | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                       |
 | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| ---------------- | ----------------------- | -----------------------------------------------------------------------------------------------------------------|
-| `Fields`      | `<CustomSteps` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `field= {fields()}` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `current= {current}` <br/>  `/>`                               |                  |                         |                                                                                                                  |
+| `Field`       | `<CustomSteps` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `field= {fields()}` <br/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `current= {current}` <br/>  `/>`                               |         -        |            -            | `Field` berfungsi untuk menampilkan <br/> judul, konten, dan deskripsi <br/> pada setiap step halaman <br/> yang ada pada menu <br/> Pembuatan SK Kolektif.|
