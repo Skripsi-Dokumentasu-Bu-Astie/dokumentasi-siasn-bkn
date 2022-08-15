@@ -1,10 +1,8 @@
 ---
 name: Preview Dokumen Pertek
 menu: Paraf Pertek
-route: /paraf-pertek/preview-dok-pertek
+route: /paraf-pertek/preview-dok-pertek1
 ---
-
-
 
 # Preview Dokumen Pertek
 
@@ -13,15 +11,16 @@ Pertek yang dibuat otomatis oleh Reporting Engine yang
 nantinya dapat diunduh oleh ASN yang bersangkutan untuk diajukan.
 
 
-### Berikut adalah tampilan dari Preview Dokumen Persetujuan Teknis
-
+```Berikut merupakan tampilan dari Preview Dokumen Persetujuan Teknis Menu Paraf Pertek:```
 ![Preview Dokumen Pertek](../../src/img/paraf-pertek/StepOnePP_PreviewDokPertek.png)
 
 ### Struktur dari komponen Preview Dokumen Pertek adalah:
 
+`TablePP2` memiliki struktur komponen sebagai berikut:
+
 | Nama Komponen        | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                                          | Properti/Atribut   | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                               |
 | -------------        | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PreviewDokPertekSK   |`<PreviewDokPertekSK` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`path=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{'kp/dokumen/pertek'}`<br/> `/>`        | `idUsul`           | `String`                | Properti idUsul berisi informasi id usulan <br/> yang akan digunakan untuk mengambil <br/> data yang diusulkan sebelumnya.                                                                         |
-|                      |                                                                                                                                                                                                                                            | `path`             | `String`                | Properti path berisi path dari dokumen pertimbangan  <br/> teknis (pertek) yang akan ditampilkan                                                                                                          |                                                                                                                                           
+| PreviewDocPertekSK   |`<PreviewDocPertekSK` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`path=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{'kp/dokumen/pertek'}`<br/> `/>`        | `idUsul`           | `String`                | Properti idUsul berisi informasi id usulan <br/> yang akan digunakan untuk mengambil <br/> data yang diusulkan sebelumnya.                                                                               |
+|                      |                                                                                                                                                                                                                                            | `path`             | `String`                | Properti path berisi path dari dokumen pertimbangan  <br/> teknis (pertek) yang akan ditampilkan                                                                                                         |                                                                                                                                           
 
 

@@ -6,22 +6,22 @@ route: /paraf-pertek/tabelpp2
 
 # Tebel Paraf Pertek 2
 
-Tabel Paraf Pertek (TablePP2) merupakan tampilan tabel yang menampilkan data monitoring untuk
+Tabel Paraf Pertek (TablePP2) merupakan tampilan tabel yang menampilkan data untuk
 paraf pertek sebagai salah satu syarat usulan kenaikan pangkat untuk ASN. Pada tabel ini akan ditampilkan
 data yang lebih spesifikasi setelah user melakukan pencarian data usulan. Tabel tersebut berisi data PNS meliputi NIP, Nama, Jenis Kenaikan, Jenis Prosedur, Instansi, Tanggal Usulan, 
 hingga Status Paraf.
 
-
-### Berikut adalah tampilan dari Table Monitoring Paraf Pertek
+```Berikut merupakan tampilan dari Table2 Menu Paraf Pertek:```
 
 ![Table PP2](../../src/img/paraf-pertek/PP_TableStep2.png)
 
 
-
 ### Struktur dan Komponen yang Digunakan
+
+`TablePP2` memiliki struktur komponen sebagai berikut:
 
 | Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                                          | Properti/Atribut   | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                                                                            |    
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- | -----------------------------------------------------------------------------------------------------------------                                                                                                                                     |
-| TablePP2      | `<TablePP2` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `dataTable`= <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `{getTekenUsul}` <br/> `/>`                                                                                                             | `dataTable`        | `Array`                 | dataTable bertipe <br/> Array yang digunakan <br/> untuk menerima <br/> data yang akan <br/> ditampilkan pada tabel. <br/> Data yang akan ditampilkan <br/> merupakan data yang sesuai dengan <br/> data yang diinput <br/> oleh user dari form data usulan.                  |
+| TablePP2      | `<TablePP2` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `dataTable`= <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `{getTekenUsul}` <br/> `/>`                                                                                                             | `dataTable`        | `Object`                | dataTable bertipe <br/> Object yang digunakan <br/> untuk menerima <br/> data yang akan <br/> ditampilkan pada tabel. <br/> Data yang akan ditampilkan <br/> merupakan data yang sesuai dengan <br/> data yang diinput <br/> oleh user dari form data usulan.                  |
 
 
