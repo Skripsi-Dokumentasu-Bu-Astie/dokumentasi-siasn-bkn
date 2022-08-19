@@ -1,0 +1,40 @@
+---
+name: Halaman Step-2
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/halaman-step-2
+---
+
+# Halaman Step-2
+
+`BuatPertekSK` merupakan _custom component_ yang digunakan untuk
+menampilkan halaman Step-2 pada menu Validasi Usulan Kenaikan Pangkat.
+Halaman Step-2 digunakan untuk membuat dokumen
+persetujuan teknis setelah proses validasi usulan berhasil
+disetujui.
+
+Halaman Step-2 sendiri terdiri dari beberapa _section_ utama, yaitu:
+
+- [Card Info ASN](/validasi-usulan-kenaikan-pangkat/card-info-asn "Card Info ASN")
+- [Form Pembuatan Dok Pertek](/validasi-usulan-kenaikan-pangkat/form-pembuatan-pertek "Form Pembuatan Dok Pertek")
+- [Preview Dok Pertek](/validasi-usulan-kenaikan-pangkat/preview-dok-pertek "Preview Dok Pertek")
+
+Komponen `BuatPertekSK` adalah komponen induk, sehingga
+didalamnya terdapat beberapa komponen yang digunakan, diantaranya:
+
+- [Layout](/validasi-usulan-kenaikan-pangkat/layout "Layout")
+- [Breadcrumb](/validasi-usulan-kenaikan-pangkat/breadcrumb "Breadcrumb")
+- [Card Info ASN](/validasi-usulan-kenaikan-pangkat/card-info-asn "Card Info ASN")
+- [Preview Dok Pertek](/validasi-usulan-kenaikan-pangkat/preview-dok-pertek "Preview Dok Pertek")
+
+Berikut adalah tampilan dari halaman Step-2:
+
+![Halaman Step-2](../../src/img/validasi-usulan-kenaikan-pangkat/Halaman-Step-2.png)
+
+### Struktur Komponen
+
+`BuatPertekSK` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                     | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| BuatPertekSK  | `<BuatPertekSK` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataRes}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{id}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti `dataUsulan` berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
+|               |                                                                                                                                                                                                                       | `idUsul`         | `String`                | Properti `idUsul` berisi <br/> nilai id dari usulan yang dikirim.                                              |
