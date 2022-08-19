@@ -1,0 +1,44 @@
+---
+name: Halaman Step-1
+menu: Validasi Usulan Kenaikan Pangkat
+route: /validasi-usulan-kenaikan-pangkat/halaman-step-1
+---
+
+# Halaman Step-1
+
+`DetailMonitoringUsulan` merupakan _custom component_ yang digunakan untuk
+menampilkan halaman Step-1 pada menu Validasi Usulan Kenaikan Pangkat.
+Halaman Step-1 digunakan untuk memeriksa kelengkapan serta
+keabsahan dokumen usulan yang diajukan oleh ASN.
+
+Halaman Step-1 sendiri terdiri dari beberapa _section_ utama, yaitu:
+
+- [Card Info ASN](/validasi-usulan-kenaikan-pangkat/card-info-asn "Card Info ASN")
+- [Dokumen Pendukung](/validasi-usulan-kenaikan-pangkat/dokumen-pendukung "Dokumen Pendukung")
+- [Resume Data 1](/validasi-usulan-kenaikan-pangkat/resume-data-1 "Resume Data 1")
+- [Resume Data 2](/validasi-usulan-kenaikan-pangkat/resume-data-2 "Resume Data 2")
+- [Preview Dok Pertek](/validasi-usulan-kenaikan-pangkat/preview-dok-pertek "Preview Dok Pertek")
+
+Komponen `DetailMonitoringUsulan` adalah komponen induk, sehingga
+didalamnya terdapat beberapa komponen yang digunakan, diantaranya:
+
+- [Layout](/validasi-usulan-kenaikan-pangkat/layout "Layout")
+- [Breadcrumb](/validasi-usulan-kenaikan-pangkat/breadcrumb "Breadcrumb")
+- [Card Info ASN](/validasi-usulan-kenaikan-pangkat/card-info-asn "Card Info ASN")
+- [Dokumen Pendukung](/validasi-usulan-kenaikan-pangkat/dokumen-pendukung "Dokumen Pendukung")
+- [Resume Data 1](/validasi-usulan-kenaikan-pangkat/resume-data-1 "Resume Data 1")
+- [Resume Data 2](/validasi-usulan-kenaikan-pangkat/resume-data-2 "Resume Data 2")
+- [Preview Dok Pertek](/validasi-usulan-kenaikan-pangkat/preview-dok-pertek "Preview Dok Pertek")
+
+Berikut adalah tampilan dari halaman Step-1:
+
+![Halaman Step-1](../../src/img/validasi-usulan-kenaikan-pangkat/Halaman-Step-1.png)
+
+### Struktur Komponen
+
+`DetailMonitoringUsulan` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen          | Contoh Pemanggilan <br/> Komponen                                                                                                                                                                                               | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| DetailMonitoringUsulan | `<DetailMonitoringUsulan` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataRes}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{id}` <br/> `/>` | `dataUsulan`     | `Object`                | Properti `dataUsulan` berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
+|                        |                                                                                                                                                                                                                                 | `idUsul`         | `String`                | Properti `idUsul` berisi <br/> nilai id dari usulan yang dikirim.                                              |
