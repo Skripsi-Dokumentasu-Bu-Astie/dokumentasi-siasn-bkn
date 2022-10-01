@@ -1,0 +1,19 @@
+---
+name: Cuti di Luar Tanggungan Negara
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/CLTN
+---
+
+# Cuti di Luar Tanggungan Negara (CLTN)
+
+Cuti di Luar Tanggungan Negara (CLTN) berisi informasi tentang tanggal mulai CLTN,
+tanggal selesai CLTN, nomor pertimbangan teknis (Pertek) BKN, tanggal pertimabangan teknis (Pertek) BKN,
+nomor surat keputusan (SK), dan tanggal surat keputusan (SK).
+
+### Struktur Komponen
+
+`CLTN` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                              | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| CLTN          | `<CLTN` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |

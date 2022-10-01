@@ -1,0 +1,22 @@
+---
+name: Pendidikan
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/pendidikan
+---
+
+# Pendidikan
+
+Pendidikan merupakan komponen yang berisi informasi tentang tingkat pendidikan ASN,
+pendidikan terakhir ASN,
+tanggal lulus, tahun lulus, nomor ijazah, nama sekolah, gelar depan, gelar belakang, dan
+pendidikan pertama dalam bentuk checkbox.
+
+![Pendidikan](../../src/img/Pendidikan.png)
+
+### Struktur Komponen
+
+`Pendidikan` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                    | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Pendidikan    | `<Pendidikan` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |
