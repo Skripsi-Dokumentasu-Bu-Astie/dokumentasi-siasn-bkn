@@ -1,0 +1,21 @@
+---
+name: Pengajuan Pembatalan
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/pengajuan-pembatalan
+---
+
+# Pengajuan Pembatalan
+
+Pengajuan Pembatalan merupakan komponen halaman yang digunakan untuk mengajukan
+pembatalan pada usulan yang sebelumnya diajukan, setelah usulan ASN di tolak.
+
+![Pengajuan Pembatalan](../../src/img/PengajuanPembatalan.png)
+
+### Struktur Komponen
+
+`PengajuanPembatalan` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen       | Contoh Pemanggilan <br/> Komponen                                                                                | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                              |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PengajuanPembatalan | `<PengajuanPembatalan`<br/>&nbsp;&nbsp;`idUsul={id}`<br/>&nbsp;&nbsp;`dataUsulan={dataRes}`<br/>&nbsp;&nbsp;`/>` | `idUsul`         | `String`                | Properti id usul berisi informasi <br/> id usulan yang diajukan yang akan digunakan <br/> sebagai acuan untuk mengambil <br/> data Dokumen Persetujuan Teknis <br/> berdasarkan id usulan yang diajukan |
+|                     |                                                                                                                  | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan                                                                                           |

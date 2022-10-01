@@ -1,0 +1,21 @@
+---
+name: Preview Dokumen Surat Keputusan
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/preview-dok-sk
+---
+
+# Preview Dokumen Surat Keputusan
+
+PreviewDokPertekSK atau Preview Dokumen Surat Keputusan merupakan komponen yang berisi dokumen
+Surat Keputusan yang dibuat otomatis oleh Reporting Engine yang
+nantinya dapat diunduh oleh ASN yang bersangkutan untuk diajukan.
+
+![Preview Dokumen Surat Keputusan](../../src/img/PreviewDokumenPertekSK.png)
+
+### Struktur Komponen
+
+`PreviewDokPertekSK` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen      | Contoh Pemanggilan <br/> Komponen                                                                                             | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                              |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PreviewDokPertekSK | `<PreviewDokPertekSK` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`idUsul=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{idUsul}` <br/> `/>` | `idUsul`         | `String`                | Properti id usul berisi informasi <br/> id usulan yang diajukan yang akan digunakan <br/> sebagai acuan untuk mengambil <br/> data Dokumen Persetujuan Teknis <br/> berdasarkan id usulan yang diajukan |

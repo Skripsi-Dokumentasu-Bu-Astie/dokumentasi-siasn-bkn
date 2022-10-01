@@ -1,0 +1,20 @@
+---
+name: Peninjauan Masa Kerja
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/PMK
+---
+
+# Peninjauan Masa Kerja
+
+PMK atau Peninjauan Masa Kerja berisi informasi tentang jenis peninjauan masa kerja,
+instansi/perusahaan,
+tanggal awal dan akhir, nomor surat keputusan beserta tanggal suratnya, nomor persetujuan teknis BKN beserta tanggal nya,
+masa kerja dalam waktu tahun dan bulan.
+
+### Struktur Komponen
+
+`PMK` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                                                                     | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                    |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| PMK           | `<PMK` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dataUsulan=` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{dataUsulan}` <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `/>` | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan |

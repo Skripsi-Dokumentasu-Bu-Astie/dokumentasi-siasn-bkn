@@ -1,0 +1,21 @@
+---
+name: Buat Pertek Surat Keputusan
+menu: Validasi Usulan Peremajaan
+route: /validasi-usulan-peremajaan/buat-pertek-sk
+---
+
+# Buat Pertek Surat Keputusan
+
+Buat Pertek Surat Keterangan merupakan komponen halaman yang digunakan untuk
+melakukan pembuatan draf surat keterangan, setelah usulan ASN di setujui.
+
+![Buat Pertek Surat Keputusan](../../src/img/BuatPertekSK.png)
+
+### Struktur Komponen
+
+`BuatPertekSK` memiliki struktur komponen sebagai berikut:
+
+| Nama Komponen | Contoh Pemanggilan <br/> Komponen                                                                         | Properti/Atribut | Tipe Data <br/> Atribut | Penjelasan                                                                                                                                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BuatPertekSK  | `<BuatPertekSK`<br/>&nbsp;&nbsp;`idUsul={id}`<br/>&nbsp;&nbsp;`dataUsulan={dataRes}`<br/>&nbsp;&nbsp;`/>` | `idUsul`         | `String`                | Properti id usul berisi informasi <br/> id usulan yang diajukan yang akan digunakan <br/> sebagai acuan untuk mengambil <br/> data Dokumen Persetujuan Teknis <br/> berdasarkan id usulan yang diajukan |
+|               |                                                                                                           | `dataUsulan`     | `Object`                | Properti data usulan berisi informasi <br/> data diri ASN, jenis layanan, <br/> hingga dokumen-dokumen usulan                                                                                           |
